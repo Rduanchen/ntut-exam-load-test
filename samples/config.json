@@ -1,0 +1,62 @@
+{
+  "testTitle": "Load Test Exam Config",
+  "description": "Generated exam config for k6 load testing.",
+  "startPassword": "test",
+  "judgerSettings": {
+    "timeLimit": 5000,
+    "memoryLimit": 256
+  },
+  "accessibleUsers": [
+    {
+      "id": "k6local1",
+      "name": "K6 User 1",
+      "ip": "127.0.0.1"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section1",
+      "title": "Basic Section",
+      "description": "A basic section for load testing",
+      "maxScore": 100,
+      "puzzles": [
+        {
+          "id": "q1",
+          "title": "Question 1",
+          "score": 50,
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 128,
+          "subtasks": [
+            {
+              "title": "Subtask 1",
+              "score": 50,
+              "visible": [
+                { "input": "1 2\n", "output": "3\n" }
+              ],
+              "hidden": []
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "title": "Question 2",
+          "score": 50,
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 128,
+          "subtasks": [
+            {
+              "title": "Subtask 1",
+              "score": 50,
+              "visible": [
+                { "input": "5 5\n", "output": "25\n" }
+              ],
+              "hidden": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

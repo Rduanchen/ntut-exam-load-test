@@ -1,0 +1,14 @@
+node_modules
+*.log*
+.DS_Store
+global-summary.txt
+summary*.html
+summary.json
+db-init-data.json
+
+# TypeScript compiled outputs
+src/**/*.js
+!src/k6-scripts/main.js
+src/**/*.js.map
+src/**/*.d.ts
+src/**/*.d.ts.map

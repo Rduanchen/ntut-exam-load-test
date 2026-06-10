@@ -1,0 +1,833 @@
+{
+  "testTitle": "113_PD",
+  "description": "113_PD Programming Exam",
+  "judgerSettings": {
+    "timeLimit": 1000,
+    "memoryLimit": 25600000
+  },
+  "accessibleUsers": [
+    {
+      "id": "k6user0001",
+      "name": "K6 Load Test User 1",
+      "ip": "10.0.0.2"
+    },
+    {
+      "id": "k6user0002",
+      "name": "K6 Load Test User 2",
+      "ip": "10.0.0.3"
+    }
+  ],
+  "globalSpecialRules": [
+    {
+      "id": "c96ffc68-4a1c-4018-a608-7f6e679097c6",
+      "type": "use",
+      "constraint": "MUST_HAVE",
+      "message": "Use main",
+      "params": {
+        "target": "main"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "Section 1",
+      "description": "Auto-generated section 1",
+      "maxScore": 100,
+      "puzzles": [
+        {
+          "title": "一、列印圖形",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "1\n5\n",
+                  "output": "1\n12\n123\n1234\n12345\n54321\n4321\n321\n21\n1\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "1\n5\n",
+                  "output": "1\n12\n123\n1234\n12345\n54321\n4321\n321\n21\n1\n"
+                }
+              ],
+              "score": 25
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "2\n5\n",
+                  "output": "____1____\n___212___\n__32123__\n_4321234_\n543212345\n_4321234_\n__32123__\n___212___\n____1____\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2\n5\n",
+                  "output": "____1____\n___212___\n__32123__\n_4321234_\n543212345\n_4321234_\n__32123__\n___212___\n____1____\n"
+                }
+              ],
+              "score": 25
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "3\n4\n",
+                  "output": "1______\n121____\n12321__\n1234321\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "3\n4\n",
+                  "output": "1______\n121____\n12321__\n1234321\n"
+                }
+              ],
+              "score": 25
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "4\n5\n",
+                  "output": "12345____\n_54321___\n__12345__\n___54321_\n____12345\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\n5\n",
+                  "output": "12345____\n_54321___\n__12345__\n___54321_\n____12345\n"
+                }
+              ],
+              "score": 25
+            }
+          ],
+          "specialRules": [],
+          "id": "q1",
+          "score": 100
+        },
+        {
+          "title": "二、骰子遊戲",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "4\n1 2 3 4\n1 2 3 4\n1 2 3 4\n1 2 3 4\n4\n4 1 3 2\n4 1 3 2\n4 1 3 2\n4 1 3 2\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\n1 2 3 4\n1 2 3 4\n1 2 3 4\n1 2 3 4\n4\n4 1 3 2\n4 1 3 2\n4 1 3 2\n4 1 3 2\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "2\n1 2 3 4\n2 1 4 3\n2\n4 3 2 1\n3 4 1 2\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2\n1 2 3 4\n2 1 4 3\n2\n4 3 2 1\n3 4 1 2\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "2\n1 2 3 4\n4 3 2 1\n3\n1 2 3 4\n2 3 1 1\n4 4 4 4\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2\n1 2 3 4\n4 3 2 1\n3\n1 2 3 4\n2 3 1 1\n4 4 4 4\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "4\n1 1 2 2\n4 4 3 3\n3 3 1 1\n2 2 1 1\n3\n1 2 3 4\n1 2 3 4\n3 1 4 2\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\n1 1 2 2\n4 4 3 3\n3 3 1 1\n2 2 1 1\n3\n1 2 3 4\n1 2 3 4\n3 1 4 2\n",
+                  "output": "Tie\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 5",
+              "visible": [
+                {
+                  "input": "2\n1 2 3 4\n2 3 1 1\n5\n1 2 3 4\n4 2 3 1\n3 3 3 3\n1 1 2 4\n3 2 1 4\n",
+                  "output": "B win\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2\n1 2 3 4\n2 3 1 1\n5\n1 2 3 4\n4 2 3 1\n3 3 3 3\n1 1 2 4\n3 2 1 4\n",
+                  "output": "B win\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 6",
+              "visible": [
+                {
+                  "input": "4\n2 2 2 1\n2 3 3 3\n4 4 2 2\n4 1 2 3\n3\n1 2 3 4\n4 2 3 1\n2 2 3 3\n",
+                  "output": "A win\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\n2 2 2 1\n2 3 3 3\n4 4 2 2\n4 1 2 3\n3\n1 2 3 4\n4 2 3 1\n2 2 3 3\n",
+                  "output": "A win\n"
+                }
+              ],
+              "score": 16.666666666666668
+            }
+          ],
+          "specialRules": [],
+          "id": "q2",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "Section 2",
+      "description": "Auto-generated section 2",
+      "maxScore": 100,
+      "puzzles": [
+        {
+          "title": "三、棒球題目",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "4 O 1 2 1\n3 1 2 2\n3 O 1 2\n3 1 1 1\n3 O 1 H\n3 1 O O\n3 O 1 O\n3 1 2 1\n3 1 1 1\n5\n",
+                  "output": "5\n7 0 0\n5 1 1\n3 1 3\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4 O 1 2 1\n3 1 2 2\n3 O 1 2\n3 1 1 1\n3 O 1 H\n3 1 O O\n3 O 1 O\n3 1 2 1\n3 1 1 1\n5\n",
+                  "output": "5\n7 0 0\n5 1 1\n3 1 3\n"
+                }
+              ],
+              "score": 25
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "4 O 1 2 O\n3 O O 1\n3 2 1 1\n3 1 O 2\n3 1 1 O\n3 2 1 2\n3 O 1 2\n3 1 2 1\n3 1 1 1\n7\n",
+                  "output": "15\n2 1 4\n4 2 6\n5 2 7\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4 O 1 2 O\n3 O O 1\n3 2 1 1\n3 1 O 2\n3 1 1 O\n3 2 1 2\n3 O 1 2\n3 1 2 1\n3 1 1 1\n7\n",
+                  "output": "15\n2 1 4\n4 2 6\n5 2 7\n"
+                }
+              ],
+              "score": 25
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "4 O O 2 O\n4 O 1 O O\n4 3 1 3 2\n4 2 1 2 O\n3 1 1 O\n3 H 2 1\n3 1 3 O\n3 2 2 2\n3 2 O H\n8\n",
+                  "output": "18\n1 1 4\n2 1 4\n9 2 6\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4 O O 2 O\n4 O 1 O O\n4 3 1 3 2\n4 2 1 2 O\n3 1 1 O\n3 H 2 1\n3 1 3 O\n3 2 2 2\n3 2 O H\n8\n",
+                  "output": "18\n1 1 4\n2 1 4\n9 2 6\n"
+                }
+              ],
+              "score": 25
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "5 1 1 2 O 2\n5 2 1 O 2 2\n5 2 1 1 1 1\n5 H 1 2 3 O\n4 1 O 2 O\n4 2 2 1 1\n4 2 1 O O\n4 1 O 2 O\n4 2 O O 1\n8\n",
+                  "output": "19\n9 1 4\n7 2 5\n8 2 6\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "5 1 1 2 O 2\n5 2 1 O 2 2\n5 2 1 1 1 1\n5 H 1 2 3 O\n4 1 O 2 O\n4 2 2 1 1\n4 2 1 O O\n4 1 O 2 O\n4 2 O O 1\n8\n",
+                  "output": "19\n9 1 4\n7 2 5\n8 2 6\n"
+                }
+              ],
+              "score": 25
+            }
+          ],
+          "specialRules": [],
+          "id": "q3",
+          "score": 100
+        },
+        {
+          "title": "四、DF-expression",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "1\n4\n",
+                  "output": "all black\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "1\n4\n",
+                  "output": "all black\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "21101\n4\n",
+                  "output": "2,0\n2,1\n3,0\n3,1\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "21101\n4\n",
+                  "output": "2,0\n2,1\n3,0\n3,1\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "2210111021001\n4\n",
+                  "output": "0,1\n2,0\n2,1\n2,3\n3,0\n3,1\n3,2\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2210111021001\n4\n",
+                  "output": "0,1\n2,0\n2,1\n2,3\n3,0\n3,1\n3,2\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "2120101211010\n4\n",
+                  "output": "0,2\n1,2\n2,2\n2,3\n3,0\n3,2\n3,3\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2120101211010\n4\n",
+                  "output": "0,2\n1,2\n2,2\n2,3\n3,0\n3,2\n3,3\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 5",
+              "visible": [
+                {
+                  "input": "221011211012100121100\n4\n",
+                  "output": "0,1\n1,2\n2,1\n3,0\n3,2\n3,3\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "221011211012100121100\n4\n",
+                  "output": "0,1\n1,2\n2,1\n3,0\n3,2\n3,3\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 6",
+              "visible": [
+                {
+                  "input": "2221001010011\n8\n",
+                  "output": "0,1\n0,2\n0,3\n0,4\n0,5\n0,6\n0,7\n1,0\n1,2\n1,3\n1,4\n1,5\n1,6\n1,7\n2,2\n2,3\n2,4\n2,5\n2,6\n2,7\n3,2\n3,3\n3,4\n3,5\n3,6\n3,7\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "2221001010011\n8\n",
+                  "output": "0,1\n0,2\n0,3\n0,4\n0,5\n0,6\n0,7\n1,0\n1,2\n1,3\n1,4\n1,5\n1,6\n1,7\n2,2\n2,3\n2,4\n2,5\n2,6\n2,7\n3,2\n3,3\n3,4\n3,5\n3,6\n3,7\n"
+                }
+              ],
+              "score": 16.666666666666668
+            }
+          ],
+          "specialRules": [],
+          "id": "q4",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "Section 3",
+      "description": "Auto-generated section 3",
+      "maxScore": 100,
+      "puzzles": [
+        {
+          "title": "五、分數四則運算",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "3/5\n17/0\n",
+                  "output": "error\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "3/5\n17/0\n",
+                  "output": "error\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "8(3/4)\n17(14/45)\n",
+                  "output": "26(11/180)\n-8(101/180)\n151(17/36)\n1575/3116\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "8(3/4)\n17(14/45)\n",
+                  "output": "26(11/180)\n-8(101/180)\n151(17/36)\n1575/3116\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "57/391\n8721/10000\n",
+                  "output": "1(69911/3910000)\n-2839911/3910000\n29241/230000\n10000/59823\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "57/391\n8721/10000\n",
+                  "output": "1(69911/3910000)\n-2839911/3910000\n29241/230000\n10000/59823\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "6(21/32)\n-11(33/140)\n",
+                  "output": "-4(649/1120)\n17(999/1120)\n-74(3529/4480)\n-7455/12584\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "6(21/32)\n-11(33/140)\n",
+                  "output": "-4(649/1120)\n17(999/1120)\n-74(3529/4480)\n-7455/12584\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 5",
+              "visible": [
+                {
+                  "input": "-319/2310\n182/239\n",
+                  "output": "31289/50190\n-45151/50190\n-377/3585\n-6931/38220\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "-319/2310\n182/239\n",
+                  "output": "31289/50190\n-45151/50190\n-377/3585\n-6931/38220\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 6",
+              "visible": [
+                {
+                  "input": "-77/89\n-7(121/545)\n",
+                  "output": "-8(4229/48505)\n6(17309/48505)\n6(12042/48505)\n41965/350304\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "-77/89\n-7(121/545)\n",
+                  "output": "-8(4229/48505)\n6(17309/48505)\n6(12042/48505)\n41965/350304\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 7",
+              "visible": [
+                {
+                  "input": "-1212/1225\n3(13/48)\n",
+                  "output": "2(16549/58800)\n-4(15301/58800)\n-3(1157/4900)\n-58176/192325\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "-1212/1225\n3(13/48)\n",
+                  "output": "2(16549/58800)\n-4(15301/58800)\n-3(1157/4900)\n-58176/192325\n"
+                }
+              ],
+              "score": 14.285714285714286
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "fc110e53-41bb-45af-a459-715a133a8251",
+              "type": "use",
+              "constraint": "MUST_HAVE",
+              "message": "Use void add(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)",
+              "params": {
+                "target": "void add(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)"
+              }
+            },
+            {
+              "id": "e7b0c360-1e5b-4db4-a521-1b3a9a14deeb",
+              "type": "use",
+              "constraint": "MUST_HAVE",
+              "message": "Use void sub(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)",
+              "params": {
+                "target": "void sub(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)"
+              }
+            },
+            {
+              "id": "a9a3b6f2-a27b-402a-9e1e-2144b6354dfa",
+              "type": "use",
+              "constraint": "MUST_HAVE",
+              "message": "Use void mul(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)",
+              "params": {
+                "target": "void mul(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)"
+              }
+            },
+            {
+              "id": "4b97a213-911e-4bf3-910e-cb69e82cda47",
+              "type": "use",
+              "constraint": "MUST_HAVE",
+              "message": "Use void div(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)",
+              "params": {
+                "target": "void div(int *numer1, int *denom1, int *numer2, int *denom2, int *resNumer, int *resDenom)"
+              }
+            }
+          ],
+          "id": "q5",
+          "score": 100
+        },
+        {
+          "title": "六、有限狀態機",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "4\nNTUT1\n__csie\n_1__1___2\n__cat1_1_a_\n",
+                  "output": "variable\nvariable\nvariable\nvariable\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\nNTUT1\n__csie\n_1__1___2\n__cat1_1_a_\n",
+                  "output": "variable\nvariable\nvariable\nvariable\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "7\n2147483647\n2147483640\n111112233\n0\n-654897\n-214748364\n-2147483648\n",
+                  "output": "integer\ninteger\ninteger\ninteger\ninteger\ninteger\ninteger\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "7\n2147483647\n2147483640\n111112233\n0\n-654897\n-214748364\n-2147483648\n",
+                  "output": "integer\ninteger\ninteger\ninteger\ninteger\ninteger\ninteger\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "4\n89545.54215\n-6456.1435\n0.72054\n-0.747845\n646484.0\n",
+                  "output": "float\nfloat\nfloat\nfloat\nfloat\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\n89545.54215\n-6456.1435\n0.72054\n-0.747845\n646484.0\n",
+                  "output": "float\nfloat\nfloat\nfloat\nfloat\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "4\n-1/2\n3169/3539\n-8/17\n2/3\n",
+                  "output": "proper fraction\nproper fraction\nproper fraction\nproper fraction\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "4\n-1/2\n3169/3539\n-8/17\n2/3\n",
+                  "output": "proper fraction\nproper fraction\nproper fraction\nproper fraction\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 5",
+              "visible": [
+                {
+                  "input": "5\n-2147483649\n-7898854254212\n10000000002\n2147483650\n2147483648\n",
+                  "output": "long int\nlong int\nlong int\nlong int\nlong int\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "5\n-2147483649\n-7898854254212\n10000000002\n2147483650\n2147483648\n",
+                  "output": "long int\nlong int\nlong int\nlong int\nlong int\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 6",
+              "visible": [
+                {
+                  "input": "5\n0x123456\n0Xabcdf\n0xAFDE\n0X1a2c4f\n0xC2aE41D\n",
+                  "output": "hexadecimal int\nhexadecimal int\nhexadecimal int\nhexadecimal int\nhexadecimal int\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "5\n0x123456\n0Xabcdf\n0xAFDE\n0X1a2c4f\n0xC2aE41D\n",
+                  "output": "hexadecimal int\nhexadecimal int\nhexadecimal int\nhexadecimal int\nhexadecimal int\n"
+                }
+              ],
+              "score": 14.285714285714286
+            },
+            {
+              "title": "Sample Input 7",
+              "visible": [
+                {
+                  "input": "8\n.____.\n-0.\n0xxx1A23\n11/33\n4566.00\n_*_.acxg\n540/457\n",
+                  "output": "error\nerror\nerror\nerror\nerror\nerror\nerror\nerror\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "8\n.____.\n-0.\n0xxx1A23\n11/33\n4566.00\n_*_.acxg\n540/457\n",
+                  "output": "error\nerror\nerror\nerror\nerror\nerror\nerror\nerror\n"
+                }
+              ],
+              "score": 14.285714285714286
+            }
+          ],
+          "specialRules": [],
+          "id": "q6",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "Section 4",
+      "description": "Auto-generated section 4",
+      "maxScore": 100,
+      "puzzles": [
+        {
+          "title": "七、長浮點數大數運算",
+          "language": "C",
+          "timeLimit": 1000,
+          "memoryLimit": 25600000,
+          "subtasks": [
+            {
+              "title": "Sample Input 1",
+              "visible": [
+                {
+                  "input": "561561151564564987.561312318456465646451468461536445648941\n6541655656464565.554644646999999945611\n",
+                  "output": "568102807221029553.115956965456465592062468461536445648941\n555019495908100422.006667671456465700840468461536445648941\n3673539683583091767903507186701247.434856662235872099446851000885001205407648714321257599747951\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "561561151564564987.561312318456465646451468461536445648941\n6541655656464565.554644646999999945611\n",
+                  "output": "568102807221029553.115956965456465592062468461536445648941\n555019495908100422.006667671456465700840468461536445648941\n3673539683583091767903507186701247.434856662235872099446851000885001205407648714321257599747951\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 2",
+              "visible": [
+                {
+                  "input": "6455345646415646531879564161.5313\n-5645646546456465651.4565646165489798465464\n",
+                  "output": "6455345640769999985423098510.0747353834510201534536\n6455345652061293078336029812.9878646165489798465464\n-36444599854869275678931156617041753522072011927.2963864454436605604050232\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "6455345646415646531879564161.5313\n-5645646546456465651.4565646165489798465464\n",
+                  "output": "6455345640769999985423098510.0747353834510201534536\n6455345652061293078336029812.9878646165489798465464\n-36444599854869275678931156617041753522072011927.2963864454436605604050232\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 3",
+              "visible": [
+                {
+                  "input": "-53156313351.56356131651518489999\n6546556465.5631561560000001\n",
+                  "output": "-46609756886.00040516051518479999\n-59702869817.12671747251518499999\n-347990806857179555289.254412074010238935613744489958489999\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "-53156313351.56356131651518489999\n6546556465.5631561560000001\n",
+                  "output": "-46609756886.00040516051518479999\n-59702869817.12671747251518499999\n-347990806857179555289.254412074010238935613744489958489999\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 4",
+              "visible": [
+                {
+                  "input": "-51551315156151651656151561.564164661561564161111100001\n-456465465465487941051641.54156415665564874897897971\n",
+                  "output": "-52007780621617139597203203.105728818217212910090079711\n-51094849690686163715099920.022600504905915412132120291\n23531395068110826834284557857357124426712808936571.66675538568731842068294886919511539014938670475997971\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "-51551315156151651656151561.564164661561564161111100001\n-456465465465487941051641.54156415665564874897897971\n",
+                  "output": "-52007780621617139597203203.105728818217212910090079711\n-51094849690686163715099920.022600504905915412132120291\n23531395068110826834284557857357124426712808936571.66675538568731842068294886919511539014938670475997971\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 5",
+              "visible": [
+                {
+                  "input": "51698465156316131561.9996513153131311\n-51698465156316131561.9996513153131311\n",
+                  "output": "0\n103396930312632263123.9993026306262622\n-2672731299518833137421601593582223294188.75049262908856725686284408578721\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "51698465156316131561.9996513153131311\n-51698465156316131561.9996513153131311\n",
+                  "output": "0\n103396930312632263123.9993026306262622\n-2672731299518833137421601593582223294188.75049262908856725686284408578721\n"
+                }
+              ],
+              "score": 16.666666666666668
+            },
+            {
+              "title": "Sample Input 6",
+              "visible": [
+                {
+                  "input": "-56465153165116464165465.5616168498411111011\n56465153165116464165465.5616168498411111011\n",
+                  "output": "0\n-112930306330232928330931.1232336996822222022\n-3188313521960061851107507244358180236003616467.56982096194294015722487275219365442121\n"
+                }
+              ],
+              "hidden": [
+                {
+                  "input": "-56465153165116464165465.5616168498411111011\n56465153165116464165465.5616168498411111011\n",
+                  "output": "0\n-112930306330232928330931.1232336996822222022\n-3188313521960061851107507244358180236003616467.56982096194294015722487275219365442121\n"
+                }
+              ],
+              "score": 16.666666666666668
+            }
+          ],
+          "specialRules": [],
+          "id": "q7",
+          "score": 100
+        }
+      ]
+    }
+  ],
+  "k6TestUsers": [
+    {
+      "testId": "k6user0001",
+      "ip": "10.0.0.2",
+      "deviceUuid": "6b8cc352-fa54-48b6-b304-51c1b3cbed51",
+      "aesKey": "68f0e89cf64d4ee4918a83b600f954d1"
+    },
+    {
+      "testId": "k6user0002",
+      "ip": "10.0.0.3",
+      "deviceUuid": "3a6ee641-1733-471e-b14d-46b01b7fb0ea",
+      "aesKey": "05fce223bbde49c98c115b019bdc1c77"
+    }
+  ]
+}

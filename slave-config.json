@@ -1,0 +1,127 @@
+{
+  "slaveId": "slave-ea5cb93a",
+  "mode": "simulation",
+  "targetHost": "http://localhost:3000",
+  "users": [
+    {
+      "testId": "k6user0001",
+      "ip": "10.0.0.2",
+      "deviceUuid": "e92847fa-d96b-4723-a542-167d2b45f7e7",
+      "aesKey": "cc30578b61bb6275d7fdb079010747913994ead89863de722c8c1b2b42d213b3"
+    },
+    {
+      "testId": "k6user0002",
+      "ip": "10.0.0.3",
+      "deviceUuid": "83df19aa-b3b2-4644-b604-e3a47220f3ab",
+      "aesKey": "a614913fec100c3d2b490d1efb09efcb576081a52d302292cf656b055b21ce75"
+    },
+    {
+      "testId": "k6user0003",
+      "ip": "10.0.0.4",
+      "deviceUuid": "c20a23cd-8bad-4367-8254-885f9e670e52",
+      "aesKey": "6d4ddd2eaeb79c4895472e44a1021d95627f529592ae91272bb6b7c001754d17"
+    },
+    {
+      "testId": "k6user0004",
+      "ip": "10.0.0.5",
+      "deviceUuid": "15dbd093-15ca-4f51-bb0c-65d529752d41",
+      "aesKey": "f2d1553f86c8a32db46c22ea5b7ebcf0ae3ebeed8c442f00fd9590f13a5c5f8b"
+    },
+    {
+      "testId": "k6user0005",
+      "ip": "10.0.0.6",
+      "deviceUuid": "5d649856-8715-480e-8952-9a9d092ddc80",
+      "aesKey": "09475d23648d357a6fa1c5b3c91474c3718e990b6245ab92525f083c4ded4526"
+    },
+    {
+      "testId": "k6user0006",
+      "ip": "10.0.0.7",
+      "deviceUuid": "dd197323-4dea-4be4-aed3-522739a5cc1b",
+      "aesKey": "973ed10193fb60383887113a295bb85baede1cb0e6bcf8fed50e8ffacdf96775"
+    },
+    {
+      "testId": "k6user0007",
+      "ip": "10.0.0.8",
+      "deviceUuid": "362e377d-661f-4701-aeab-bb7ef6dbdc63",
+      "aesKey": "4c5dfd97e3ba89696639aa4fe9ce16078f8ac418a0ff3b49863ced99a6621e89"
+    },
+    {
+      "testId": "k6user0008",
+      "ip": "10.0.0.9",
+      "deviceUuid": "415e22b6-969b-4b0d-b19f-22152fc47b15",
+      "aesKey": "6a7621c26e978911e7e1f1dbf0702ca51731ee435840312ccf6fa8475a0f2276"
+    },
+    {
+      "testId": "k6user0009",
+      "ip": "10.0.0.10",
+      "deviceUuid": "e1d15fc6-d2a3-4d00-be7c-6ee5aac6477a",
+      "aesKey": "4e5c7033d8f6089b23ab21aa4bc1bb904b58b0506bd256dca0ac9e6590894828"
+    },
+    {
+      "testId": "k6user0010",
+      "ip": "10.0.0.11",
+      "deviceUuid": "5c553888-e7cc-4c15-8bbd-3988e5bfeb90",
+      "aesKey": "0791a04b7fe0463bd72cca614bab0b2e7c1f914ea627cd8240b1855ae98a210c"
+    },
+    {
+      "testId": "k6user0011",
+      "ip": "10.0.0.12",
+      "deviceUuid": "d1d7983a-308d-40e3-8eb6-163fab162ce8",
+      "aesKey": "86f25e20a2377ae77d724ea0c445bb54fa0cfb5791b3148b387c22e82059967a"
+    },
+    {
+      "testId": "k6user0012",
+      "ip": "10.0.0.13",
+      "deviceUuid": "d33436a0-9291-4fab-b79b-cca14046a114",
+      "aesKey": "97b366fba4f5113ee9ce911803131ed1d52e429a379fcbcfac566e7fae4aa100"
+    },
+    {
+      "testId": "k6user0013",
+      "ip": "10.0.0.14",
+      "deviceUuid": "307c2dad-e5d8-442d-9292-ce9fc6e27db9",
+      "aesKey": "df63ac9e955408efb531fdf82cb97efcb2a9f538986c88af1b3defd19b4192ca"
+    },
+    {
+      "testId": "k6user0014",
+      "ip": "10.0.0.15",
+      "deviceUuid": "2e7eed71-75cc-4422-8c5f-c0cec37c6998",
+      "aesKey": "e074e7aa9136ab60ac6022351beff4e5cb22bbb978136931369ee11b790fab85"
+    },
+    {
+      "testId": "k6user0015",
+      "ip": "10.0.0.16",
+      "deviceUuid": "05f384aa-1a67-4a91-9ec9-255f41074ca3",
+      "aesKey": "a17dc0b9f2e5dbf7eb41ade40a0215e98410196b0ffde1ee32836018b708ef21"
+    },
+    {
+      "testId": "k6user0016",
+      "ip": "10.0.0.17",
+      "deviceUuid": "0554601f-6bb1-472d-9259-ecefaa0f1a38",
+      "aesKey": "91332aebe4726ac978edff73354fe5ac13b7c2e05baecfeead5e52d4ba5326c6"
+    },
+    {
+      "testId": "k6user0017",
+      "ip": "10.0.0.18",
+      "deviceUuid": "1ff18470-0b78-4293-abb9-3d8180c43581",
+      "aesKey": "06cc43d8305f484a2aa8decb55394d439d31d5ca37f3454439c2ba33eb66f3d7"
+    },
+    {
+      "testId": "k6user0018",
+      "ip": "10.0.0.19",
+      "deviceUuid": "da9026cd-1d94-4695-b27f-3423e2e3f1cb",
+      "aesKey": "4e8de2b03b71f6414e54ac44baef465e86c3efb3a4e3e3f8c121d6e34b1f040b"
+    },
+    {
+      "testId": "k6user0019",
+      "ip": "10.0.0.20",
+      "deviceUuid": "8255606e-9a2c-47d8-8472-cbe33e7dbc19",
+      "aesKey": "7519ffb208a720a3a287432a4a651c53f1ca31819fe2e2b993bd5ecd05355a22"
+    },
+    {
+      "testId": "k6user0020",
+      "ip": "10.0.0.21",
+      "deviceUuid": "d3b182e2-af3a-432e-951a-e258bb6de450",
+      "aesKey": "80252310eb5029d85d331b0a03d0b6c82738678667ce4cf6ee87392a139d85dc"
+    }
+  ]
+}
