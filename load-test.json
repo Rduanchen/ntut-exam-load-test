@@ -1,0 +1,18 @@
+{
+  "execution": {
+    "type": "iterations",
+    "iterationsPerUser": 10,
+    "duration": "10m"
+  },
+  "pureMode": {
+    "configCallsPerIteration": 10,
+    "messagesCallsPerIteration": 10,
+    "scoreCallsPerIteration": 70,
+    "logCallsPerIteration": 140,
+    "codeCallsPerIteration": 70
+  },
+  "simulationMode": {
+    "module1Loops": 70,
+    "module2Loops": 5
+  }
+}

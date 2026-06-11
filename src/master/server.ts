@@ -7,7 +7,7 @@ import * as readline from 'readline';
 import { MasterConfigPayload, SlaveRegistration, TestUser, K6SummaryReport } from '../types';
 import { aggregateReports } from './aggregator';
 
-export function startMaster(port: number, configPath: string, mode: 'pure' | 'simulation', targetHost: string) {
+export function startMaster(port: number, configPath: string, mode: 'pure' | 'simulation', targetHost: string, loadTestConfig: any) {
   const app = express();
   app.use(express.json({ limit: '50mb' }));
 
@@ -75,7 +75,8 @@ export function startMaster(port: number, configPath: string, mode: 'pure' | 'si
           slaveId: slave.slaveId,
           mode,
           targetHost,
-          users: assignedUsers
+          users: assignedUsers,
+          loadTestConfig
         };
 
         return axios.post(`${slave.host}/start`, payload)

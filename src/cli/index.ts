@@ -77,7 +77,14 @@ async function main() {
         default: 'http://localhost:3000',
       },
     ]);
-    startMaster(answers.port, answers.config, answers.mode as 'pure' | 'simulation', answers.target);
+    let loadTestConfig: any;
+    try {
+      loadTestConfig = JSON.parse(fs.readFileSync(path.resolve('./load-test.json'), 'utf-8'));
+    } catch (e) {
+      console.error(chalk.yellow(`[Warning] No load-test.json found in root, using defaults.`));
+      loadTestConfig = {};
+    }
+    startMaster(answers.port, answers.config, answers.mode as 'pure' | 'simulation', answers.target, loadTestConfig);
   } else if (action === 'start-slave') {
     const answers = await inquirer.prompt([
       {
@@ -194,10 +201,19 @@ async function main() {
       await new Promise(r => setTimeout(r, 2000));
     }
 
+    let loadTestConfig: any;
+    try {
+      loadTestConfig = JSON.parse(fs.readFileSync(path.resolve('./load-test.json'), 'utf-8'));
+    } catch (e) {
+      console.error(chalk.yellow(`[Warning] No load-test.json found in root, using defaults.`));
+      loadTestConfig = {};
+    }
+
     const payload = {
       mode: answers.mode,
       targetHost: targetHost,
       users: testUsers,
+      loadTestConfig
     };
 
     const configPath = path.resolve(__dirname, '..', '..', 'slave-config.json');

@@ -2,6 +2,7 @@ export interface K6TestConfig {
   mode: 'pure' | 'simulation';
   targetHost: string;
   users: TestUser[];
+  loadTestConfig?: any;
 }
 
 export interface TestUser {
@@ -21,6 +22,7 @@ export interface MasterConfigPayload {
   mode: 'pure' | 'simulation';
   targetHost: string;
   users: TestUser[];
+  loadTestConfig?: any;
 }
 
 export interface K6SummaryReport {
